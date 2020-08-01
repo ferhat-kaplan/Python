@@ -2,7 +2,7 @@ class BankAccount(object):
 
     def __init__(self, name, money, address):
         self.name = name  # Global
-        # moneyin başına __ ekleyerek dışarıdan erişimini kapatıyoruz
+        # moneyin başına __ ekleyerek dışarıdan erişimini kapatıyoruz. Bunu methodlarda bile kullanabilirsiniz.
         self.__money = money  # Private
         self.address = address
 
