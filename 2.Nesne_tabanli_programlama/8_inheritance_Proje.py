@@ -9,7 +9,7 @@ class Website:
 
 
 class Website1(Website):
-
+    # chald
     def __init__(self,  name, surname, ids):
         Website.__init__(self, name, surname)
         self.ids = ids
@@ -19,7 +19,7 @@ class Website1(Website):
 
 
 class Website2(Website):
-
+    # chald
     def __init__(self, name, surname, email):
         Website.__init__(self, name, surname)
         self.email = email
