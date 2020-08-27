@@ -6,9 +6,9 @@ import sys
 
 mesaj = MIMEMultipart()
 
-mesaj["From"] = "fkmll2121@gmail.com"
+mesaj["From"] = "gönderen mail adresi"
 
-mesaj["To"] = "mekafkmll@gmail.com"
+mesaj["To"] = "alıcı mail adresi"
 
 mesaj["Subject"] = "mailin konusu"
 
@@ -29,7 +29,7 @@ try:
 
     mail.ehlo()
     mail.starttls()
-    mail.login('fkmll2121@gmail.com', 'lock2121')
+    mail.login('gönderen mail adresi', 'şifre')
     while True:
         mail.sendmail(mesaj['From'], mesaj['To'], mesaj.as_string())
     print('mail başarı ile gönderildi')
